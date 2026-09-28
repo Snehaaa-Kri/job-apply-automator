@@ -1,0 +1,29 @@
+# ─── Secrets — NEVER commit these ───────────────────────────────────────────
+# .env.example is committed (it's a template with no real values).
+# .env.local / .env / .env.* contain real credentials — never commit.
+.env
+.env.local
+.env.*.local
+
+# ─── Go build output ─────────────────────────────────────────────────────────
+# Compiled binaries land here when you run: go build -o bin/api ./cmd/api
+bin/
+dist/
+
+# Go test cache and coverage output
+*.out
+coverage.html
+coverage.txt
+
+# ─── OS & Editor ─────────────────────────────────────────────────────────────
+.DS_Store
+.idea/
+.vscode/
+
+# ─── Logs ────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ─── Vendor directory (if you ever use go mod vendor) ────────────────────────
+# Remove this line if you intentionally vendor dependencies
+vendor/
